@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ModifierController">
+   <children>
+      <Label alignment="BASELINE_CENTER" layoutX="8.0" layoutY="8.0" prefHeight="123.0" prefWidth="909.0" style="-fx-background-color: #B0C4DE;" text="Vous pouvez modifier votre reclamation">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="44.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="191.0" layoutY="541.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modifierlv" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Modifier" textAlignment="RIGHT" textFill="WHITE" />
+      <Button fx:id="Retour" alignment="CENTER" contentDisplay="TOP" layoutX="8.0" layoutY="131.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goback" prefHeight="498.0" prefWidth="123.0" style="-fx-background-color: #B0C4DE;" text="Acceuil" textAlignment="RIGHT" textFill="#1b1a1a">
+         <font>
+            <Font name="Bernard MT Condensed" size="27.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="list" layoutX="315.0" layoutY="468.0" onAction="#getvalue" prefHeight="25.0" prefWidth="161.0" promptText="choisir" style="-fx-background-color: #3464bc;" />
+      <Label fx:id="affiche" layoutX="503.0" layoutY="155.0" prefHeight="285.0" prefWidth="376.0" />
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="607.0" layoutY="556.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Affiche" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Afficher" textAlignment="RIGHT" textFill="WHITE" />
+      <TextField fx:id="tfdesc" layoutX="320.0" layoutY="291.0" prefHeight="25.0" prefWidth="155.0" promptText="Description" />
+      <TextField fx:id="tfprenom" layoutX="317.0" layoutY="218.0" prefHeight="62.0" prefWidth="161.0" promptText="Veuillez entrer votre prenom" />
+      <TextField fx:id="tfobjet" layoutX="318.0" layoutY="331.0" prefHeight="25.0" prefWidth="161.0" promptText="Objet" />
+      <TextField fx:id="tftel" layoutX="318.0" layoutY="374.0" prefHeight="30.0" prefWidth="161.0" promptText="Numero tel" />
+      <TextField fx:id="tfnom" layoutX="319.0" layoutY="180.0" prefHeight="25.0" prefWidth="157.0" promptText="Veuillez entrer votre nom" />
+      <DatePicker fx:id="txfdat" layoutX="320.0" layoutY="408.0" />
+      <Text layoutX="212.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="94.44140625" />
+      <Text layoutX="209.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="99.251953125" />
+      <Text layoutX="205.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" wrappingWidth="97.9765625" />
+      <Text layoutX="202.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="104.861328125" />
+      <Text layoutX="205.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objet" wrappingWidth="106.9765625" />
+      <Text layoutX="201.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero mobile" wrappingWidth="106.9765625" />
+   </children>
+</AnchorPane>
