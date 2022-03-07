@@ -23,8 +23,8 @@ public class ActivitePidev extends Application {
     
   @Override
    public void start(Stage primaryStage) throws Exception{
-      Parent root  = FXMLLoader.load(getClass().getResource("/view/Ativite.fxml"));
-      // Parent root  = FXMLLoader.load(getClass().getResource("/view/Reservation.fxml"));
+     // Parent root  = FXMLLoader.load(getClass().getResource("/view/Ativite.fxml"));
+      Parent root  = FXMLLoader.load(getClass().getResource("/view/Reservation.fxml"));
         primaryStage.setTitle("Artip page");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

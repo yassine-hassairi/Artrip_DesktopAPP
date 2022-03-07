@@ -134,7 +134,7 @@ public class Evenements {
     }
      @Override
     public String toString() {
-        return "Evenements{" + "id=" + Id + ", Titre=" + Titre+ ", Lieu=" + Lieu + ", Description=" + Description + ", Image=" + Image+",Type=" + Type+",Date=" + date+" \n";
+        return " Titre=" + Titre+ ", Lieu=" + Lieu + ", Description=" + Description + ", Image=" + Image+",Type=" + Type+",Date=" + date+" \n";
     }
 
    

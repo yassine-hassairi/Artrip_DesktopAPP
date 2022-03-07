@@ -69,15 +69,7 @@ public class SuiviController implements Initializable {
         SuiviList.getItems().addAll(id);
     }
 
-    @FXML
-    private void search(MouseEvent event) {
-          List<ReservationEven> nomEvenement = s.findByNomE(search.getText());
-        SuiviList.getItems().clear();
 
-        SuiviList.getItems().removeAll(reservationEven);
-     SuiviList.getItems().addAll(nomEvenement);
-
-    }
      @FXML
     private void Show(ActionEvent event) {
             SuiviList.getItems().clear();
@@ -87,7 +79,6 @@ public class SuiviController implements Initializable {
 
   
 
-  @FXML
     private void Deletev(MouseEvent event) {
 
         int SelectedId = SuiviList.getSelectionModel().getSelectedIndex();
@@ -116,6 +107,23 @@ public class SuiviController implements Initializable {
        List<Evenements> Ev = s.afficher();
       SuiviList.getItems().clear();
        SuiviList.getItems().addAll(reservationEven );
+    }
+
+    @FXML
+    private void search(ActionEvent event) {
+          List<ReservationEven> nomEvenement = s.findByNomE(search.getText());
+        SuiviList.getItems().clear();
+
+        SuiviList.getItems().removeAll(reservationEven);
+     SuiviList.getItems().addAll(nomEvenement);
+
+    }
+
+    @FXML
+    private void goback(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/Suivi.fxml"));
+        Stage window = (Stage) Retour.getScene().getWindow();
+        window.setScene(new Scene(root));
     }
   
 
