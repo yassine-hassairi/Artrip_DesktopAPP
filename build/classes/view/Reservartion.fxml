@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="idh" prefHeight="636.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReservartionController">
+   <children>
+      <Label fx:id="affiche" layoutX="489.0" layoutY="200.0" prefHeight="52.0" prefWidth="47.0" />
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="83.0" layoutY="568.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ajouter" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Ajouter" textAlignment="RIGHT" textFill="WHITE" />
+      <Text layoutX="216.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="97.9765625" />
+      <TextField fx:id="nom" layoutX="193.0" layoutY="293.0" prefHeight="30.0" prefWidth="161.0" promptText="Nom" />
+      <Text layoutX="230.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="104.861328125" />
+      <TextField fx:id="txfdat" layoutX="202.0" layoutY="474.0" prefHeight="52.0" prefWidth="161.0" promptText="yyyy/mm/dd" />
+      <Label fx:id="list" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="-21.0" prefHeight="100.0" prefWidth="927.0" style="-fx-background-color: #B0C4DE;" text="welcome to Artrip activities">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="41.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="99.0" fitWidth="162.0" layoutX="126.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Artrip_DesktopAPP-branch1/src/designe/logo%20artrip-03%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="181.0" layoutY="95.0" text="idHebergement" />
+      <TextField fx:id="idh" layoutX="189.0" layoutY="123.0" promptText="idHebergement" />
+      <Label layoutX="193.0" layoutY="166.0" text="idParticipon" />
+      <TextField fx:id="idparticp" layoutX="189.0" layoutY="211.0" promptText="idParticipon" />
+      <Label layoutX="230.0" layoutY="336.0" text="Prenom" />
+      <TextField fx:id="prenom" layoutX="202.0" layoutY="378.0" promptText="prenom" />
+      <Label layoutX="-57.0" layoutY="128.0" text="mail" />
+      <Label layoutX="665.0" layoutY="95.0" text="mail" />
+      <TextField fx:id="mail" layoutX="601.0" layoutY="134.0" promptText="mail" />
+      <Label layoutX="480.0" layoutY="166.0" prefHeight="21.0" prefWidth="0.0" />
+      <Label layoutX="652.0" layoutY="190.0" text="num_tel" />
+      <TextField fx:id="tel" layoutX="601.0" layoutY="227.0" promptText="numero" />
+      <Label layoutX="707.0" layoutY="293.0" text="prix " />
+      <TextField fx:id="prix" layoutX="628.0" layoutY="330.0" promptText="prix" />
+      <Label layoutX="690.0" layoutY="383.0" text="Repas " />
+      <Label layoutX="730.0" layoutY="490.0" text="Liste_hotel" />
+      <TextField fx:id="LHotel" layoutX="672.0" layoutY="521.0" promptText="nom_hotel" />
+      <TextField fx:id="repas" layoutX="641.0" layoutY="439.0" promptText="repas" />
+      <ImageView fitHeight="90.0" fitWidth="107.0" layoutX="38.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/reservation.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="150.0" layoutX="482.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="489.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/telephone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="83.0" layoutX="497.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/a-bas-prix.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="141.0" layoutX="548.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/repas.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="82.0" layoutX="528.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/signe-de-lhotel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="66.0" layoutX="95.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/utilisateur.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="122.0" layoutX="113.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/utilisateur.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

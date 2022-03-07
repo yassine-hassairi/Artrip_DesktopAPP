@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HebergementController">
+   <children>
+      <Label layoutX="104.0" layoutY="231.0" prefHeight="18.0" prefWidth="66.0" text="Nom" />
+      <TextField fx:id="tftitre" layoutX="233.0" layoutY="208.0" prefHeight="46.0" prefWidth="271.0" promptText="Nom" />
+      <TextField fx:id="Adrestx" layoutX="233.0" layoutY="268.0" prefHeight="46.0" prefWidth="271.0" promptText="Adresse" />
+      <Label layoutX="91.0" layoutY="272.0" prefHeight="38.0" prefWidth="54.0" text="Adresse" />
+      <Pane layoutX="-45.0" prefHeight="113.0" prefWidth="982.0" style="-fx-background-color: #22427c;">
+         <children>
+            <Button layoutX="875.0" layoutY="84.0" mnemonicParsing="false" onAction="#afficherl" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Afficher" textFill="#fffbfb" />
+         </children>
+      </Pane>
+      <TextField fx:id="TypeTx" layoutX="265.0" layoutY="332.0" prefHeight="46.0" prefWidth="271.0" promptText="Type" />
+      <Label layoutX="91.0" layoutY="343.0" prefHeight="38.0" prefWidth="54.0" text="Type" />
+      <TextField fx:id="nbrch" layoutX="265.0" layoutY="403.0" prefHeight="46.0" prefWidth="271.0" promptText="Nombre de Chambre" />
+      <TextField fx:id="typecham" layoutX="295.0" layoutY="473.0" prefHeight="46.0" prefWidth="271.0" promptText="Type de chambe" />
+      <Label layoutX="104.0" layoutY="407.0" prefHeight="38.0" prefWidth="154.0" text="Nombre de  Chambre" />
+      <Label layoutX="157.0" layoutY="477.0" prefHeight="38.0" prefWidth="135.0" text="Type de Chambre" />
+      <Button fx:id="supprime" layoutX="323.0" layoutY="551.0" mnemonicParsing="false" onAction="#pagesupp" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="supprimer" textFill="WHITE" />
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="50.0" layoutY="547.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addArticle" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Ajouter" textAlignment="RIGHT" textFill="WHITE" />
+      <Label fx:id="Afficher" layoutX="475.0" layoutY="147.0" prefHeight="415.0" prefWidth="462.0" />
+      <Button fx:id="Retour" layoutX="194.0" layoutY="547.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Modifier" textFill="WHITE" />
+      <ImageView fitHeight="62.0" fitWidth="95.0" layoutX="19.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/utilisateur.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="19.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/adresse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="135.0" layoutX="-17.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="54.0" fitWidth="145.0" layoutX="91.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/chambre.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
