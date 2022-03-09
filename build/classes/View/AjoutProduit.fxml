@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjoutProduitController">
+    <stylesheets>
+        <URL value="@/style/ajoutproduit.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@/style/produit.css" />
+         </stylesheets>
+         <children>
+            <Text layoutX="95.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom : " wrappingWidth="55.224609375" AnchorPane.topAnchor="71.6552734375">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+            <Text layoutX="95.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantité : " AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="726.76513671875" AnchorPane.topAnchor="110.0">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+            <Text layoutX="95.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix : " AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="764.64990234375" AnchorPane.topAnchor="146.6552734375">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+            <Text layoutX="95.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :  " AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="701.9873046875" AnchorPane.topAnchor="178.6552734375">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+            <Text layoutX="104.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image : " AnchorPane.leftAnchor="104.0" AnchorPane.rightAnchor="736.2841796875">
+               <font>
+                  <Font size="17.0" />
+               </font></Text>
+            <TextField fx:id="txtNom" layoutX="304.0" layoutY="72.0" prefHeight="26.0" prefWidth="342.0" AnchorPane.topAnchor="72.0" />
+            <TextField fx:id="txtQte" layoutX="303.0" layoutY="110.0" prefHeight="26.0" prefWidth="342.0" AnchorPane.topAnchor="110.0" />
+            <TextField fx:id="txtPrix" layoutX="303.0" layoutY="144.0" prefHeight="26.0" prefWidth="342.0" AnchorPane.topAnchor="144.0" />
+            <TextField fx:id="txtDescrip" layoutX="304.0" layoutY="179.0" prefHeight="109.0" prefWidth="341.0" AnchorPane.topAnchor="179.0" />
+            <TextField fx:id="txtImage" layoutX="302.0" layoutY="301.0" prefHeight="26.0" prefWidth="342.0" />
+            <Button layoutX="760.0" layoutY="540.0" mnemonicParsing="false" onAction="#ajouterProduit" text="Ajouter Produit " />
+            <Button fx:id="btnRetour" layoutX="45.0" layoutY="540.0" mnemonicParsing="false" onAction="#Retour" text="Retour" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
