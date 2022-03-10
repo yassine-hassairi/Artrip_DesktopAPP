@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="619.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="event.view.ModifierController">
+   <children>
+      <Text layoutX="223.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="94.44140625" />
+      <Text layoutX="227.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieu" wrappingWidth="99.251953125" />
+      <TextField fx:id="tfli" layoutX="306.0" layoutY="299.0" prefHeight="25.0" prefWidth="174.0" promptText="Lieu" />
+      <Text layoutX="222.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="97.9765625" />
+      <TextField fx:id="tfdesc" layoutX="307.0" layoutY="221.0" prefHeight="62.0" prefWidth="161.0" promptText="Description" />
+      <Text layoutX="225.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="104.861328125" />
+      <Text layoutX="224.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" wrappingWidth="106.9765625" />
+      <Text layoutX="229.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="106.9765625" />
+      <TextField fx:id="txtprix" layoutX="306.0" layoutY="482.0" prefHeight="25.0" prefWidth="174.0" promptText="Prix" />
+      <Text layoutX="239.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" wrappingWidth="104.861328125" />
+      <TextField fx:id="txtty" layoutX="307.0" layoutY="385.0" prefHeight="30.0" prefWidth="174.0" promptText="Type" />
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="178.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/title.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="178.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/description.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="178.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/place.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="180.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/image%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="34.0" layoutX="177.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/activities.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="180.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="180.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/best-price.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfTitle" layoutX="309.0" layoutY="189.0" prefHeight="25.0" prefWidth="157.0" promptText="Tilte" />
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="313.0" layoutY="572.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modifierlv" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Modifier" textAlignment="RIGHT" textFill="WHITE" />
+      <Button fx:id="Retour" alignment="CENTER" contentDisplay="TOP" layoutX="17.0" layoutY="316.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goback" prefHeight="62.0" prefWidth="136.0" style="-fx-background-color: #fcb02d; -fx-background-radius: 100;" text="Home" textAlignment="RIGHT" textFill="#1b1a1a">
+         <font>
+            <Font name="Bernard MT Condensed" size="27.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="list" layoutX="250.0" layoutY="532.0" onAction="#getvalue" prefHeight="25.0" prefWidth="251.0" promptText="choisir" style="-fx-background-color: #3464bc;" />
+      <DatePicker fx:id="txfdat" layoutX="306.0" layoutY="441.0" />
+      <Label fx:id="affiche" layoutX="569.0" layoutY="206.0" prefHeight="285.0" prefWidth="299.0" />
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="694.0" layoutY="557.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Affiche" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc;" text="Afficher" textAlignment="RIGHT" textFill="WHITE" />
+      <TextField fx:id="txtIm" layoutX="307.0" layoutY="344.0" prefHeight="25.0" prefWidth="174.0" promptText="Image" />
+      <Button layoutX="492.0" layoutY="344.0" mnemonicParsing="false" onAction="#addimage" prefHeight="25.0" prefWidth="21.0" />
+      <HBox alignment="CENTER" layoutX="123.0" layoutY="2.0" prefHeight="119.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#020024,#4040e8);">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Admin Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="119.0" fitWidth="122.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Resources/img/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

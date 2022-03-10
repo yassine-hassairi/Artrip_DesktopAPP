@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="506.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="event.view.AtiviteController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="277.0" layoutY="453.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addArticle" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc; -fx-background-radius: 100;" text="Ajouter" textAlignment="RIGHT" textFill="WHITE" />
+      <Button fx:id="supprimer" layoutX="8.0" layoutY="302.0" mnemonicParsing="false" onAction="#pagesupprimer" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #fcb02d; -fx-background-radius: 100;" text="supprimer" textFill="#0a0a0a">
+         <font>
+            <Font name="Bernard MT Condensed" size="16.0" />
+         </font></Button>
+      <Text layoutX="217.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="94.44140625" />
+      <Text layoutX="223.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieu" wrappingWidth="99.251953125" />
+      <TextField fx:id="tfli" layoutX="282.0" layoutY="243.0" prefHeight="25.0" prefWidth="157.0" promptText="Lieu" AnchorPane.leftAnchor="282.0" />
+      <Text layoutX="204.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="97.9765625" />
+      <TextField fx:id="tfdesc" layoutX="282.0" layoutY="169.0" prefHeight="62.0" prefWidth="157.0" promptText="Description" AnchorPane.leftAnchor="282.0" />
+      <Text layoutX="215.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="104.861328125" />
+      <Text layoutX="217.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" wrappingWidth="106.9765625" />
+      <TextField fx:id="txtIm" layoutX="282.0" layoutY="284.0" prefHeight="25.0" prefWidth="157.0" promptText="Image" AnchorPane.leftAnchor="282.0" />
+      <Text layoutX="215.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="106.9765625" />
+      <TextField fx:id="txtprix" layoutX="282.0" layoutY="410.0" prefHeight="25.0" prefWidth="157.0" promptText="Prix" AnchorPane.leftAnchor="282.0" />
+      <Text layoutX="215.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" wrappingWidth="104.861328125" />
+      <TextField fx:id="txtty" layoutX="282.0" layoutY="326.0" prefHeight="30.0" prefWidth="157.0" promptText="Type" AnchorPane.leftAnchor="282.0" />
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="162.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../designe/format-size.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="167.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/description.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="172.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../designe/place.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="174.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../designe/image%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="34.0" layoutX="171.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../designe/activities.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="44.0" layoutX="171.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../designe/calendar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="172.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../designe/best-price.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfTitle" layoutX="282.0" layoutY="128.0" prefHeight="25.0" prefWidth="157.0" promptText="Tilte" AnchorPane.leftAnchor="282.0" />
+      <Button fx:id="modifi" layoutX="8.0" layoutY="228.0" mnemonicParsing="false" onAction="#pagemodif" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #fcb02d; -fx-background-radius: 100;" text="ModifierActivite" textFill="#030303">
+         <font>
+            <Font name="Bernard MT Condensed" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHome" layoutX="7.0" layoutY="153.0" mnemonicParsing="false" onAction="#goBack" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #fcb02d; -fx-background-radius: 100;" text="Home" textFill="#171616">
+         <font>
+            <Font name="Bernard MT Condensed" size="21.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="631.0" layoutY="452.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#afficherl" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #3464bc; -fx-background-radius: 100;" text="Afficher" textAlignment="RIGHT" textFill="WHITE" />
+      <ScrollPane fx:id="afficher" layoutX="519.0" layoutY="134.0" prefHeight="295.0" prefWidth="398.0">
+         <content>
+            <Label fx:id="Afficher" prefHeight="295.0" prefWidth="399.0" style="-fx-background-color: #B0C4DE;" />
+         </content>
+      </ScrollPane>
+      <DatePicker fx:id="txfdat" layoutX="282.0" layoutY="370.0" prefHeight="25.0" prefWidth="157.0" AnchorPane.leftAnchor="282.0" />
+      <Button layoutX="446.0" layoutY="282.0" mnemonicParsing="false" onAction="#addimage" prefHeight="26.0" prefWidth="30.0" />
+      <Button fx:id="pdf" layoutX="9.0" layoutY="375.0" mnemonicParsing="false" onAction="#pdf" prefHeight="46.0" prefWidth="126.0" style="-fx-background-color: #fcb02d; -fx-background-radius: 100;" text="Pdf">
+         <font>
+            <Font name="Bernard MT Condensed" size="16.0" />
+         </font></Button>
+      <HBox alignment="CENTER" layoutX="113.0" layoutY="2.0" prefHeight="109.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(#020024,#4040e8);">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Admin Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="103.0" fitWidth="95.0" layoutX="2.0" layoutY="5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Resources/img/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
